@@ -21,7 +21,6 @@ public class VersionDetails {
 	@GeneratedValue
 	private int versionId;
 	
-	@NotBlank
 	@Min(value = 0L, message = "Vote must be positive") 
 	@ApiModelProperty(notes="Specify the article version and is a mandatory field")
 	private int version;
